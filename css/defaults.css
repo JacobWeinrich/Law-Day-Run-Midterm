@@ -5,6 +5,46 @@ body, html {
     background: #000000;
 }
 
+/* School Project Disclaimer Banner */
+.disclaimer-banner {
+    background: linear-gradient(135deg, #e4a419 0%, #f7dc6f 100%);
+    border-bottom: 2px solid #8b4513;
+    color: #000000;
+    font-size: 1rem;
+    position: relative;
+    z-index: 1001;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    animation: pulse 2s infinite;
+}
+
+.disclaimer-banner i {
+    color: #000000;
+    font-size: 1.2rem;
+}
+
+.disclaimer-banner strong {
+    color: #000000;
+    text-shadow: 0 0 3px rgba(139, 69, 19, 0.4);
+}
+
+.disclaimer-link {
+    color: #000000;
+    text-decoration: underline;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.disclaimer-link:hover {
+    color: #9c4600;
+    text-shadow: 0 0 2px rgba(162, 162, 162, 0.6);
+}
+
+@keyframes pulse {
+    0% { box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3); }
+    50% { box-shadow: 0 2px 15px rgba(255, 215, 0, 0.4); }
+    100% { box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3); }
+}
+
 .logo-LDR {
     content: url("../images/law-day-run-logo-lg.png");
     transition: transform 0.3s ease;
