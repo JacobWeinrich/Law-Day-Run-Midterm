@@ -30,11 +30,13 @@
                 class="grey-text display-1 text-shadow-1">&nbsp;Day</span><span
                 class="green-text display-1 text-shadow-1">&nbsp;Run</span> <span class="silver-text">&nbsp;Belleville,
                 IL</span> <span class="bronze-text">&nbsp;04/29/2023</span> </h2>
-        <!-- Nav Bar Collapsable -->
-        <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+    </header>
+    
+    <!-- Nav Bar Collapsable - Separate Container -->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark sticky-top">
             <div class="container-fluid">
                 <!-- Home button Brand Logo -->
-                <a class="navbar-brand" href="index.html"><img class="logo-LDR-brand" src="index.html"
+                <a class="navbar-brand" href="../index.html"><img class="logo-LDR-brand" src="../index.html"
                         alt="Nav Bar Logo"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -77,7 +79,6 @@
                 </div>
             </div>
         </nav>
-    </header>
     <main>
         <div id="wrapper" class="min-vh-100 container p-5 text-center">
             <img src="#" alt="" class="logo-LDR img-fluid" />
@@ -96,7 +97,8 @@
             <!-- Gold Sponsors -->
             <hr>
             <h2 class="display-2"><span class="yellow-text">GOLD</span> SPONSORS</h2>
-            <div class="row gy-5">
+            <div class="sponsor-section">
+                <div class="row gy-5">
                 <div class="col-12 col-lg-6"><img src="../images/sponsors/gold/2017_Grey Eagle logo.jpg" alt=""
                         class="img-fluid"></div>
                 <div class="col-12 col-lg-6"><img src="../images/sponsors/gold/baker-logo.jpg" alt="" class="img-fluid">
@@ -122,11 +124,13 @@
                         class="img-fluid"></div>
                 <div class="col-12 col-lg-6"><img src="../images/sponsors/gold/stifel.jpg" alt="" class="img-fluid">
                 </div>
+                </div>
             </div>
             <hr>
             <!-- Silver Sponsors -->
             <h2 class="display-2 mt-3"><span class="silver-text">SILVER</span> SPONSORS</h2>
-            <div class="row gy-5">
+            <div class="sponsor-section">
+                <div class="row gy-5">
                 <div class="col-12 col-lg-6"><img src="../images/sponsors/Silver/ann.PNG" alt="" class="img-fluid">
                 </div>
                 <div class="col-12 col-lg-6"><img src="../images/sponsors/Silver/athletico.png" alt=""
@@ -138,12 +142,13 @@
                 </div>
                 <div class="col-12 col-lg-6"><img src="../images/sponsors/Silver/mgm.jpg" alt="" class="img-fluid">
                 </div>
-
+                </div>
             </div>
             <hr>
             <!-- Bronze Sponsors -->
             <h2 class="display-2 mt-3"><span class="bronze-text">BRONZE</span> SPONSORS</h2>
-            <div class="row gy-5">
+            <div class="sponsor-section">
+                <div class="row gy-5">
                 <div class="col-12 col-lg-6"><img src="../images/sponsors/bronze/bonifield.jpg" alt=""
                         class="img-fluid">
                 </div>
@@ -166,11 +171,13 @@
                 <div class="col-12 col-lg-6"><img src="../images/sponsors/bronze/weilmuenster.png" alt=""
                         class="img-fluid">
                 </div>
+                </div>
             </div>
             <!-- Supporting Sponsors -->
             <hr>
             <h2 class="display-2 m-3"><span class="lime-text">Supporting</span> SPONSORS</h2>
-            <div class="row gy-5">
+            <div class="sponsor-section">
+                <div class="row gy-5">
                 <div class="col-12 col-lg-6"><img src="../images/sponsors/supporting/bennies.jpeg" alt=""
                         class="img-fluid">
                 </div>
@@ -195,6 +202,7 @@
                 <div class="col-12 col-lg-6"><img src="../images/sponsors/supporting/thompson-coburn.jpg" alt=""
                         class="img-fluid">
                 </div>
+                </div>
             </div>
             <hr>
             <h3 class="display-1">Thanks To All Of Our Sponsors</h3>
@@ -217,6 +225,18 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
         integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+    </script>
+    
+    <!-- Navbar Scroll Effect -->
+    <script>
+        window.addEventListener('scroll', function() {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
     </script>
 </body>
 
